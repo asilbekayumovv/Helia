@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import helia.hotel.databinding.FragmentSplashFiveBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,8 +35,11 @@ class Splash_fiveFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_splash_five, container, false)
+        val binding = FragmentSplashFiveBinding.inflate(inflater,container,false)
+        binding.skip.setOnClickListener {
+            findNavController().navigate(R.id.action_splash_threeFragment_to_letsChooseAccFragment)
+        }
+        return binding.root
     }
 
     companion object {

@@ -44,7 +44,11 @@ class Splash_threeFragment : Fragment() {
         binding.nextbtn.setOnClickListener {
             findNavController().navigate(R.id.action_splash_threeFragment_to_splash_fourFragment2)
         }
+        binding.skip.setOnClickListener {
+            findNavController().navigate(R.id.action_splash_threeFragment_to_letsChooseAccFragment)
+        }
         return binding.root
+
     }
 
     companion object {

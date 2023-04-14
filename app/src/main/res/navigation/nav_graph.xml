@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_splash_threeFragment_to_splash_fourFragment2"
             app:destination="@id/splash_fourFragment2" />
+        <action
+            android:id="@+id/action_splash_threeFragment_to_letsChooseAccFragment"
+            app:destination="@id/letsChooseAccFragment" />
     </fragment>
     <fragment
         android:id="@+id/splash_fourFragment2"
@@ -40,10 +43,22 @@
         <action
             android:id="@+id/action_splash_fourFragment2_to_splash_fiveFragment2"
             app:destination="@id/splash_fiveFragment2" />
+        <action
+            android:id="@+id/action_splash_fourFragment2_to_letsChooseAccFragment"
+            app:destination="@id/letsChooseAccFragment" />
     </fragment>
     <fragment
         android:id="@+id/splash_fiveFragment2"
         android:name="helia.hotel.Splash_fiveFragment"
         android:label="fragment_splash_five"
-        tools:layout="@layout/fragment_splash_five" />
+        tools:layout="@layout/fragment_splash_five" >
+        <action
+            android:id="@+id/action_splash_fiveFragment2_to_letsChooseAccFragment"
+            app:destination="@id/letsChooseAccFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/letsChooseAccFragment"
+        android:name="helia.hotel.LetsChooseAccFragment"
+        android:label="fragment_lets_choose_acc"
+        tools:layout="@layout/fragment_lets_choose_acc" />
 </navigation>

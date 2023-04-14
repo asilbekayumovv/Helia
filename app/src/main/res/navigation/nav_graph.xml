@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splash_one_Fragment">
+
+    <fragment
+        android:id="@+id/splash_one_Fragment"
+        android:name="helia.hotel.Splash_one_Fragment"
+        android:label="fragment_splash_one_"
+        tools:layout="@layout/fragment_splash_one_" >
+        <action
+            android:id="@+id/action_splash_one_Fragment_to_splash_two_Fragment"
+            app:destination="@id/splash_two_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splash_two_Fragment"
+        android:name="helia.hotel.Splash_two_Fragment"
+        android:label="fragment_splash_two_"
+        tools:layout="@layout/fragment_splash_two_" >
+        <action
+            android:id="@+id/action_splash_two_Fragment_to_splash_threeFragment"
+            app:destination="@id/splash_threeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splash_threeFragment"
+        android:name="helia.hotel.Splash_threeFragment"
+        android:label="fragment_splash_three"
+        tools:layout="@layout/fragment_splash_three" >
+        <action
+            android:id="@+id/action_splash_threeFragment_to_splash_fourFragment2"
+            app:destination="@id/splash_fourFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/splash_fourFragment2"
+        android:name="helia.hotel.Splash_fourFragment"
+        android:label="fragment_splash_four"
+        tools:layout="@layout/fragment_splash_four" >
+        <action
+            android:id="@+id/action_splash_fourFragment2_to_splash_fiveFragment2"
+            app:destination="@id/splash_fiveFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/splash_fiveFragment2"
+        android:name="helia.hotel.Splash_fiveFragment"
+        android:label="fragment_splash_five"
+        tools:layout="@layout/fragment_splash_five" />
+</navigation>

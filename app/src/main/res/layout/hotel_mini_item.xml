@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="20dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/mini_hotel_image"
+            android:layout_width="90dp"
+            android:background="@drawable/hotel2"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/mini_hotel_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="$35"
+            android:textColor="@color/teal_200"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mini_hotel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="President Hotel"
+            android:textColor="#000000"
+            android:textSize="19dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/mini_hotel_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mini_hotel_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Paris,France"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/mini_hotel_name"
+            app:layout_constraintTop_toBottomOf="@+id/mini_hotel_name" />
+
+        <TextView
+            android:id="@+id/mini_hotel_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:drawableStart="@drawable/baseline_star_24"
+            android:text="4.8"
+            android:textSize="17dp"
+            app:layout_constraintStart_toStartOf="@+id/mini_hotel_location"
+            app:layout_constraintTop_toBottomOf="@+id/mini_hotel_location" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="/ night"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/mini_hotel_price"
+            app:layout_constraintTop_toBottomOf="@+id/mini_hotel_price" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mini_hotel_isBooked"
+            android:layout_width="55dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#00FFFFFF"
+            app:icon="@drawable/baseline_bookmark_border_24"
+            app:iconGravity="start"
+            app:iconTint="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/textView6"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/mini_hotel_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="(4,654 review)"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mini_hotel_rating"
+            app:layout_constraintStart_toEndOf="@+id/mini_hotel_rating" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

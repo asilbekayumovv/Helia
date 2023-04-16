@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="30dp"
+    android:layout_height="400dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cl"
+        android:background="@drawable/hotel2_mini">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="20dp"
+            android:backgroundTint="@color/teal_700"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/white_star"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/rating"
+                android:text="4.8"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="23dp"
+                ></TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/hotel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emerald De Hotel"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paris,France"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"
+            app:layout_constraintStart_toStartOf="@+id/hotel_name"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_name" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$29"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="35dp"
+            app:layout_constraintStart_toStartOf="@+id/location"
+            app:layout_constraintTop_toBottomOf="@+id/location" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/per night"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/price"
+            app:layout_constraintTop_toTopOf="@+id/price"
+            android:layout_marginTop="24dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="4dp"
+            ></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

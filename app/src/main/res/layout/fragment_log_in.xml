@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LogInFragment">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginTop="80dp"
+        android:text="Log in to your
+        \Account "
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="numberPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="15dp"
+        android:text="Sign Up"
+        android:background="#51E619"/>
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginLeft="150dp"
+        android:text="or continue with "/>
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginLeft="150dp">
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/facebook"/>
+        <ImageView
+            android:id="@+id/google"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/google"/>
+        <ImageView
+            android:id="@+id/apple"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/apple"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

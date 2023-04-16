@@ -67,6 +67,9 @@
         <action
             android:id="@+id/action_letsChooseAccFragment_to_splash_fiveFragment2"
             app:destination="@id/splash_fiveFragment2" />
+        <action
+            android:id="@+id/action_letsChooseAccFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
     </fragment>
     <fragment
         android:id="@+id/createAccountFragment"
@@ -77,4 +80,9 @@
             android:id="@+id/action_createAccountFragment_to_letsChooseAccFragment"
             app:destination="@id/letsChooseAccFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="helia.hotel.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" />
 </navigation>

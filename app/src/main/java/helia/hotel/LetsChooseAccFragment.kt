@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import helia.hotel.databinding.FragmentLetsChooseAccBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,7 +35,11 @@ class LetsChooseAccFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        return inflater.inflate(R.layout.fragment_lets_choose_acc, container, false)
+        val binding = FragmentLetsChooseAccBinding.inflate(inflater,container, false)
+        binding.back.setOnClickListener {
+            findNavController().navigate(R.id.action_letsChooseAccFragment_to_splash_fiveFragment2)
+        }
+        return binding.root
     }
 
     companion object {

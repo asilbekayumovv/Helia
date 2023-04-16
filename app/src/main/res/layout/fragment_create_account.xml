@@ -81,6 +81,33 @@
         android:textSize="15dp"
         android:text="Sign Up"
         android:background="#51E619"/>
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginLeft="150dp"
+        android:text="or continue with "/>
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="580dp"
+        android:layout_marginLeft="150dp">
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/facebook"/>
+        <ImageView
+            android:id="@+id/google"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/google"/>
+        <ImageView
+            android:id="@+id/apple"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/apple"/>
+    </LinearLayout>
     
 
 </RelativeLayout>

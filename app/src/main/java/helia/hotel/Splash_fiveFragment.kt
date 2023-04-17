@@ -39,6 +39,9 @@ class Splash_fiveFragment : Fragment() {
         binding.skip.setOnClickListener {
             findNavController().navigate(R.id.action_splash_threeFragment_to_letsChooseAccFragment)
         }
+        binding.nextbtn3.setOnClickListener {
+            findNavController().navigate(R.id.action_splash_fiveFragment2_to_letsChooseAccFragment)
+        }
         return binding.root
     }
 

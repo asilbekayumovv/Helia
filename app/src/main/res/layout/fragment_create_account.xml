@@ -73,7 +73,7 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <androidx.appcompat.widget.AppCompatButton
-
+android:id="@+id/signUp"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginTop="450dp"

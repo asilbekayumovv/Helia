@@ -55,6 +55,9 @@
         <action
             android:id="@+id/action_splash_fiveFragment2_to_letsChooseAccFragment"
             app:destination="@id/letsChooseAccFragment" />
+        <action
+            android:id="@+id/action_splash_fiveFragment2_to_letsChooseAccFragment2"
+            app:destination="@id/letsChooseAccFragment" />
     </fragment>
     <fragment
         android:id="@+id/letsChooseAccFragment"

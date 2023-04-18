@@ -8,13 +8,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="412dp"
-        android:layout_height="351dp"
+        android:layout_width="450dp"
+        android:layout_height="300dp"
         android:src="@drawable/vocation"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="-56dp" />
+        tools:layout_editor_absoluteY="-3dp" />
 
     <TextView
         android:id="@+id/textView"
@@ -45,7 +46,7 @@
         android:id="@+id/nextbtn2"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="28dp"
         android:background="#4CAF50"
         android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"

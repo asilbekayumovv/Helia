@@ -9,18 +9,20 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="450dp"
+        android:layout_height="300dp"
         android:src="@drawable/man"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="-56dp" />
+        tools:layout_editor_absoluteY="-3dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="391dp"
         android:layout_height="69dp"
+        android:layout_marginTop="32dp"
         android:text="Travel Safely comfortably. and easily"
         android:textColor="@color/black"
         android:textSize="30sp"

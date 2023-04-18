@@ -32,6 +32,6 @@ class BigHotelAdapter(var array:MutableList<Hotel>):RecyclerView.Adapter<BigHote
         holder.hotel_location.text=temp.location
         holder.reyting.text=temp.rating.toString()
         holder.hotel_price.text="$"+temp.price_pernight.toString()
-        notifyDataSetChanged()
+//        notifyDataSetChanged()
     }
 }

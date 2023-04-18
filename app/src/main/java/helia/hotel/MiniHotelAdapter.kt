@@ -5,15 +5,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 
-class MiniHotelAdapter(var array:MutableList<Hotel>):RecyclerView.Adapter<MiniHotelAdapter.MyHolder>() {
+class MiniHotelAdapter(var array:MutableList<MiniHOtel>):RecyclerView.Adapter<MiniHotelAdapter.MyHolder>() {
     class MyHolder(itemView:View):RecyclerView.ViewHolder(itemView){
         var miniHotelName=itemView.findViewById<TextView>(R.id.mini_hotel_name)
         var miniHotelLocation=itemView.findViewById<TextView>(R.id.mini_hotel_location)
         var miniHotelPrice=itemView.findViewById<TextView>(R.id.mini_hotel_price)
-        var miniHotelImage=itemView.findViewById<LinearLayout>(R.id.mini_hotel_image)
+        var miniHotelImage=itemView.findViewById<ConstraintLayout>(R.id.mini_hotel_image)
         var miniHotelIsBooked=itemView.findViewById<MaterialButton>(R.id.mini_hotel_isBooked)
         var miniHotelReveiws=itemView.findViewById<TextView>(R.id.mini_hotel_review)
         var miniHotelRating=itemView.findViewById<TextView>(R.id.mini_hotel_rating)
@@ -42,6 +43,6 @@ class MiniHotelAdapter(var array:MutableList<Hotel>):RecyclerView.Adapter<MiniHo
         if (temp.isBooked){
             holder.miniHotelIsBooked.setIconResource(R.drawable.baseline_bookmark_24)
         }
-        notifyDataSetChanged()
+//        notifyDataSetChanged()
     }
 }

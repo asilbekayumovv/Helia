@@ -1,7 +1,6 @@
 package helia.hotel
 
-
-class Hotel(
+class MiniHOtel (
     val name:String,
     val location:String,
     val reviews_num:Int,

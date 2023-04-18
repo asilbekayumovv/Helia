@@ -23,6 +23,6 @@ class CategoryAdapter(var array: MutableList<Category>):RecyclerView.Adapter<Cat
     override fun onBindViewHolder(holder: MyHolder, position: Int) {
         var temp=array[position]
         holder.category_name.text=temp.name
-        notifyDataSetChanged()
+//        notifyDataSetChanged()
     }
 }

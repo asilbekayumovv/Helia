@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.widget.addTextChangedListener
+import helia.hotel.databinding.FragmentMainMenuBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -33,8 +35,60 @@ class MainMenuFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main_menu, container, false)
+        val binding = FragmentMainMenuBinding.inflate(inflater, container, false)
+
+        binding.search.addTextChangedListener {
+            val filter = mutableListOf<Hotel>()
+            val filter2 = mutableListOf<MiniHOtel>()
+            if (it != null) {
+                for (c in filter) {
+
+
+                    if (c.name.lowercase().contains(it.toString().lowercase())) {
+                        filter.add(c)
+                    }
+                }
+                    var adapter = BigHotelAdapter(filter)
+                    binding.rv2.adapter = adapter
+
+            }
+            for (d in filter2) {
+
+                if (d.name.lowercase().contains(it.toString().lowercase())){
+                    filter2.add(d)
+                }
+            }
+            var adapter2 = MiniHotelAdapter(filter2)
+            binding.rv3.adapter = adapter2
+        }
+
+
+        val category = mutableListOf<Category>()
+        var adapter3 = CategoryAdapter(category)
+        binding.rv1.adapter = adapter3
+
+        category.add(Category("Recommendet"))
+        category.add(Category("Popular"))
+
+        val list = mutableListOf<Hotel>()
+        var adapter = BigHotelAdapter(list)
+        binding.rv2.adapter = adapter
+
+        list.add(Hotel("Andijan city", "Andijan city", 555, 789, R.drawable.hotel2, true, 4.8, "Amazing Hotel"))
+        list.add(Hotel("Qashqadarya city", "Andijan city", 555, 789, R.drawable.hotel2, true, 4.8, "Amazing Hotel"))
+        list.add(Hotel("Samarkand city", "Andijan city", 555, 789, R.drawable.hotel2, true, 4.8, "Amazing Hotel"))
+        list.add(Hotel("Namangan city", "Andijan city", 555, 789, R.drawable.hotel2, true, 4.8, "Amazing Hotel"))
+
+
+        var list2 = mutableListOf<MiniHOtel>()
+        var adapter2 = MiniHotelAdapter(list2)
+        binding.rv3.adapter = adapter2
+
+        list2.add(MiniHOtel("Tashkent city", "Tashkent city", 655, 999, R.drawable.hotel2_mini, true, 4.6, "Wonderful hotel"))
+        list2.add(MiniHOtel("Tashkent city", "Tashkent city", 655, 999, R.drawable.hotel2_mini, true, 4.6, "Wonderful hotel"))
+        list2.add(MiniHOtel("Tashkent city", "Tashkent city", 655, 999, R.drawable.hotel2_mini, true, 4.6, "Wonderful hotel"))
+        list2.add(MiniHOtel("Tashkent city", "Tashkent city", 655, 999, R.drawable.hotel2_mini, true, 4.6, "Wonderful hotel"))
+        return binding.root
     }
 
     companion object {

@@ -36,9 +36,10 @@ class LogInFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
        val binding = FragmentLogInBinding.inflate(inflater, container, false)
-        binding.SignUp.setOnClickListener {
-            findNavController().navigate(R.id.lo)
+        binding.SignIn.setOnClickListener {
+            findNavController().navigate(R.id.action_logInFragment_to_mainMenuFragment)
         }
+        return binding.root
     }
 
     companion object {

@@ -82,10 +82,22 @@
         <action
             android:id="@+id/action_createAccountFragment_to_letsChooseAccFragment"
             app:destination="@id/letsChooseAccFragment" />
+        <action
+            android:id="@+id/action_createAccountFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
     </fragment>
     <fragment
         android:id="@+id/logInFragment"
         android:name="helia.hotel.LogInFragment"
         android:label="fragment_log_in"
-        tools:layout="@layout/fragment_log_in" />
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="helia.hotel.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" />
 </navigation>

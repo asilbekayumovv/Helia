@@ -99,5 +99,14 @@
         android:id="@+id/mainMenuFragment"
         android:name="helia.hotel.MainMenuFragment"
         android:label="fragment_main_menu"
-        tools:layout="@layout/fragment_main_menu" />
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_markedFragment"
+            app:destination="@id/markedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/markedFragment"
+        android:name="helia.hotel.MarkedFragment"
+        android:label="fragment_marked"
+        tools:layout="@layout/fragment_marked" />
 </navigation>

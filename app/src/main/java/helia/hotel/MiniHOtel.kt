@@ -8,5 +8,6 @@ class MiniHOtel (
     val main_photo:Int,
     var isBooked:Boolean,
     val rating:Double,
-    val description:String
-)
+    val description:String,
+    val status : Boolean
+): java.io.Serializable

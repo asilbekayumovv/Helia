@@ -3,13 +3,16 @@ package helia.hotel
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 
-class MiniHotelAdapter(var array:MutableList<MiniHOtel>):RecyclerView.Adapter<MiniHotelAdapter.MyHolder>() {
+class MiniHotelAdapter(var array:MutableList<MiniHOtel>,
+                        var myHotel2: MyHotel2,
+                       requireActivity: FragmentActivity
+):RecyclerView.Adapter<MiniHotelAdapter.MyHolder>() {
     class MyHolder(itemView:View):RecyclerView.ViewHolder(itemView){
         var miniHotelName=itemView.findViewById<TextView>(R.id.mini_hotel_name)
         var miniHotelLocation=itemView.findViewById<TextView>(R.id.mini_hotel_location)
@@ -18,6 +21,11 @@ class MiniHotelAdapter(var array:MutableList<MiniHOtel>):RecyclerView.Adapter<Mi
         var miniHotelIsBooked=itemView.findViewById<MaterialButton>(R.id.mini_hotel_isBooked)
         var miniHotelReveiws=itemView.findViewById<TextView>(R.id.mini_hotel_review)
         var miniHotelRating=itemView.findViewById<TextView>(R.id.mini_hotel_rating)
+    }
+
+    interface MyHotel2 {
+        fun onItemClick(hotel: MiniHOtel)
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyHolder {

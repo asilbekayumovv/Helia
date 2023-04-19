@@ -116,7 +116,7 @@ binding.rv3.adapter = adapter2
                 binding.bookmark1.setImageResource(R.drawable.baseline_bookmark_24)
                 isFav = true
                 binding.bookmark1.tag = 1
-                val filter = list2.filter { it.status }
+                val filter = list .filter { it.status }
                 adapter = BigHotelAdapter(
                     filter as MutableList<Hotel>,
                     object: BigHotelAdapter.MyHotel{

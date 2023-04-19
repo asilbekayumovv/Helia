@@ -37,6 +37,10 @@ class MainMenuFragment : Fragment() {
     ): View? {
         val binding = FragmentMainMenuBinding.inflate(inflater, container, false)
 
+        binding.bookmark1.setOnClickListener {
+
+        }
+
         binding.search.addTextChangedListener {
             val filter = mutableListOf<Hotel>()
             val filter2 = mutableListOf<MiniHOtel>()

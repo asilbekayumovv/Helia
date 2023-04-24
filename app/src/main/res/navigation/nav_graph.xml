@@ -103,10 +103,42 @@
         <action
             android:id="@+id/action_mainMenuFragment_to_markedFragment"
             app:destination="@id/markedFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_bookingFragment"
+            app:destination="@id/bookingFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/markedFragment"
         android:name="helia.hotel.MarkedFragment"
         android:label="fragment_marked"
         tools:layout="@layout/fragment_marked" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="helia.hotel.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="helia.hotel.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="helia.hotel.BookingFragment"
+        android:label="fragment_booking"
+        tools:layout="@layout/fragment_booking" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="helia.hotel.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

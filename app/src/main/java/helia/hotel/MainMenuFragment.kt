@@ -27,6 +27,10 @@ class MainMenuFragment : Fragment() {
     private lateinit var list: MutableList<Hotel>
     private lateinit var list2: MutableList<MiniHOtel>
     private var isFav = false
+    private lateinit var homeFragment: HomeFragment
+    private lateinit var searchFragment: SearchFragment
+    private lateinit var bookingFragment: BookingFragment
+    private lateinit var profileFragment: ProfileFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +49,7 @@ class MainMenuFragment : Fragment() {
         loadData()
         loadHotel()
         val binding = FragmentMainMenuBinding.inflate(inflater, container, false)
+
 
 binding.rv2.setHasFixedSize(true)
 
